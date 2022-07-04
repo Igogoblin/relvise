@@ -133,8 +133,7 @@ body {
 .main-block {
     position: relative;
 }
-.container {
-}
+
 .main-block-body {
     padding: 184px 0 191px 0;
     position: relative;
@@ -227,4 +226,67 @@ font-size: 42px;
         /* img делаем прозрачным для читабельности */
     }
 }
+/* ------------------------------------------- */
+.services {
+    margin: -111px 0 0 0;
+    position: relative;
+    z-index: 2;
+}
+.service-body{
+    display: flex;
+}
+@media (min-width: 670px){
+    .services-body{
+    margin: 0 -15px;
+    }
+    }
+
+.services-column {
+    flex: 0 1 33.333%;
+    margin: 0 0 30px 0;
+}
+@media (min-width: 670px){
+    .services-column{
+        padding: 0 15px;
+    }
+}
+@media (max-width: 992px){
+.services-column{
+    flex: 0 1 50%;
+}
+.services-column:last-child{
+    flex: 1 1 100%
+}
+}
+
+.item-service {
+    height: 100%;
+    /* ровность карточек по высоте */
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+    background: #fff;
+    padding: 35px;
+}
+.item-service > *:not(:last-child){
+margin: 0 0 10px 0;
+}
+.service-green {
+    background: #0d5c63;
+}
+.service-green .service-title{
+    color: #fff;
+}
+.service-green .service-text{
+    color: #fff;
+}
+.service-title {
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    font-size: 24px;
+    line-height: 133%;
+}
+.service-text {
+    color: #737373;
+    line-height: calc(20/14*100%);
+}
+
 /* ----footer------------------------------------------------------ */
