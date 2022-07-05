@@ -34,6 +34,7 @@ body {
     color:#252b42;
     font-weight: 500;
     font-family: Montserrat;
+    background: #fafafa;
 }
 .wrapper {
     min-height: 100%;
@@ -124,6 +125,36 @@ body {
     }
    
 }
+/* -----------HEADER BLOCK-------------------------------------- */
+.header-block {
+    text-align: center;
+
+letter-spacing: 0.2px;
+font-weight: 700;
+}
+.advantages-title {
+        font-size: 40px;
+    line-height: calc(20/14*100%);
+}
+.advantages-title:not(:last-child){
+    margin: 0 0 10px 0;
+}
+.advantages-subtitle {
+    line-height: calc(20/14*100%);
+    color: #737373;
+}
+@media (max-width: 992px){
+    .advantages-title {
+        font-size: 33px;
+
+    }
+}
+@media (max-width: 767px){
+    .advantages-title {
+        font-size: 30px;
+        
+    }
+}
 /* ----main--------------------------------------------------------- */
 .page{
     flex: 1 1 auto;
@@ -141,6 +172,11 @@ body {
     min-width: 400px;
 }
 @media (max-width: 992px){
+    .main-block-body{
+padding: 115px 0 160px 0;
+    }
+}
+@media (max-width: 479px){
     .main-block-body{
 padding: 120px 0 191px 0;
     }
@@ -232,11 +268,11 @@ font-size: 42px;
     position: relative;
     z-index: 2;
 }
-.service-body{
-    display: flex;
-}
+
 @media (min-width: 670px){
     .services-body{
+        display: flex;
+        flex-wrap: wrap;
     margin: 0 -15px;
     }
     }
@@ -245,14 +281,19 @@ font-size: 42px;
     flex: 0 1 33.333%;
     margin: 0 0 30px 0;
 }
+
 @media (min-width: 670px){
     .services-column{
         padding: 0 15px;
     }
+
 }
 @media (max-width: 992px){
 .services-column{
     flex: 0 1 50%;
+}
+.services-column:not(:last-child){
+    margin: 0 0 30px 0;
 }
 .services-column:last-child{
     flex: 1 1 100%
@@ -266,6 +307,12 @@ font-size: 42px;
     background: #fff;
     padding: 35px;
 }
+@media (max-width: 479px){
+    .item-service{
+        padding: 25px;
+    }
+}
+
 .item-service > *:not(:last-child){
 margin: 0 0 10px 0;
 }
@@ -288,5 +335,133 @@ margin: 0 0 10px 0;
     color: #737373;
     line-height: calc(20/14*100%);
 }
-
+/* ----section----advantages----------------------------------------------------- */
+.advantages .container{
+    flex-direction: column;
+}
+.advantages{
+    padding: 80px 0;
+}
+@media (max-width: 1020px){
+    .advantages{
+        padding: 50px 0;
+    }
+}
+@media (max-width: 767px){
+    .advantages{
+        padding: 30px 0;
+    }
+}
+.advantages-block {
+margin: 0 0 50px 0;
+}
+.advantages-body {
+    display: flex;
+    margin: 0 -15px -30px;
+}
+.advantages-column {
+    padding: 0 15px;
+    flex: 0 1 25%;
+    margin: 0 0 30px 0;
+}
+@media (max-width: 1020px) {
+    .advantages-column{
+        
+        flex: 0 1 50%;
+    } 
+}
+@media (max-width: 560px) {
+    .advantages-column{
+        
+        flex: 0 1 100%;
+    } 
+}
+.advantages-icon{
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.advantages-item {
+    background: #fff;
+    padding: 30px 40px;
+    text-align: center;
+font-weight: 700;
+}
+.advantages-item:*:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+.advantages-value {
+    
+    font-size: 40px;
+    line-height: 142%;
+}
+.advantages-text {
+    letter-spacing: 0.1px;
+    color: #737373;
+    font-size: 16px;
+    line-height: 150%;
+}
+/* ------secton practice-------------------------------------------------------- */
+.page__practice {
+}
+.practice {
+}
+.practice__container {
+    margin: 0 0 45px 0;
+}
+.container {
+}
+.practice__header {
+}
+.header-block {
+}
+.header-block__title {
+}
+.header-block__subtitle {
+}
+.practice__body {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.practice__column {
+    padding: 0 15px;
+    flex: 0 1 25%;
+}
+.practice__item {
+    background-color: #fff;
+}
+.item-practice {
+}
+.item-practice__content{
+    padding: 30px;
+}
+.item-practice__link {
+    color: inherit;
+    display: inline-block;
+}
+.item-practice__link:hover{
+    text-decoration: underline;
+}
+.item-practice__link:not(:last-child){
+    margin: 0 0 15px 0;
+}
+.item-practice__title {
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+}
+.item-practice__text {
+    color: #737373;
+    line-height: 142%;
+}
+.item-practice__image {
+    display: block;
+    padding: 0 0 69% 0;
+    /* 138/200*100        height/weight*100%    */
+}
+.ibg {
+}
 /* ----footer------------------------------------------------------ */
